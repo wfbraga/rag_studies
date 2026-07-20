@@ -1,0 +1,30 @@
+# Install UV as env and packge manager
+
+## Comands
+```bash
+uv init # initiates a project in the current folder using the folder name
+uv venv # creates an environment to consil your project dependencies
+.venv\Scripts\activate # activate the environment
+```
+create a requirement.txt and list your dependencies. For this project we'll use:
+langchain
+langchain-groq
+faiss-cpu
+tiktoken
+langchain-community
+langchain-openai
+chromadb
+sentence-transformers
+pypdf
+python-dotenv
+
+Type
+```
+uv add -r requirement.txt
+```
+
+After all this install 'ipykernel' to be able to work wit Jupyter Notebooks.
+```
+uv add ipykernel
+```
+
